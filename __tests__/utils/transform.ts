@@ -1,6 +1,6 @@
 import { transformFileSync, TransformOptions } from '@babel/core';
-import plugin from '../../plugin';
-import { PluginOptions } from '../../typings';
+import plugin from '../../src/plugin';
+import { PluginOptions } from '../../src/typings';
 
 export function transform(
   filePath: string,

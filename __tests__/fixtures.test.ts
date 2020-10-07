@@ -24,7 +24,7 @@ describe('should pass fixtures', () => {
       '__tests__',
       '__snapshots__',
       parsedFile.dir,
-      parsedFile.name + '.shot',
+      parsedFile.name + parsedFile.ext + '.shot',
     );
 
     it(`transforms ${parsedFile.dir}/${parsedFile.base}`, () => {

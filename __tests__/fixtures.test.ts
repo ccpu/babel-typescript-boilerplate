@@ -37,7 +37,7 @@ describe('should pass fixtures', () => {
     });
   });
 
-  it('should pass manual  test', () => {
+  it('should pass manual test', () => {
     const result = transform(
       path.resolve(manualTestFixturesPath, 'variable.ts'),
       {

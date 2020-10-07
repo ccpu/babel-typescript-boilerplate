@@ -27,7 +27,7 @@ describe('should pass fixtures', () => {
       parsedFile.name + '.shot',
     );
 
-    it(`transforms ${filePath}`, () => {
+    it(`transforms ${parsedFile.dir}/${parsedFile.base}`, () => {
       const result = transform(path.join(__dirname, filePath), {
         comments: false,
         value: 'foo',

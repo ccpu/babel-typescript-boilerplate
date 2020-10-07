@@ -15,13 +15,23 @@ describe('should pass fixtures', () => {
       return;
     }
 
+    const parsedFile = path.parse(filePath);
+
+    const pathToSnap = path.resolve(
+      process.cwd(),
+      '__tests__',
+      '__snapshots__',
+      parsedFile.dir,
+      parsedFile.name + '.shot',
+    );
+
     it(`transforms ${filePath}`, () => {
-      expect(
-        transform(path.join(__dirname, filePath), {
-          comments: false,
-          value: 'foo',
-        }),
-      ).toMatchSnapshot();
+      const result = transform(path.join(__dirname, filePath), {
+        comments: false,
+        value: 'foo',
+      });
+
+      expect(result).toMatchSpecificSnapshot(pathToSnap);
     });
   });
 });

@@ -9,6 +9,7 @@ module.exports = {
   parserOptions: {
     project: 'tsconfig.json',
     sourceType: 'module',
+    extraFileExtensions: ['.shot'],
   },
   plugins: ['@typescript-eslint', 'sort-keys-fix', 'jest'],
   extends: [

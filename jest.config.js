@@ -6,4 +6,5 @@ module.exports = {
   testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(ts|js)x?$',
   testPathIgnorePatterns: ['/__tests__/fixtures/', '/__tests__/utils/'],
   preset: 'ts-jest',
+  setupFilesAfterEnv: ['./jest.setup.js'],
 };

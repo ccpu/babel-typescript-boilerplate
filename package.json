@@ -36,7 +36,9 @@
     "rimraf": "^3.0.2",
     "ts-jest": "^26.4.1",
     "tsutils": "^3.17.1",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "jest:clearCache": "jest --clearCache",
+    "jest:no-cache": "jest --no-cache"
   },
   "scripts": {
     "clean": "rimraf coverage lib tmp",

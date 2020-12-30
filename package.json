@@ -1,6 +1,6 @@
 {
   "name": "babel-typescript-boilerplate",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Starter to create babel plugin in typescript",
   "source": "src/plugin.ts",
   "main": "lib/plugin.js",

@@ -7,7 +7,7 @@
   "module": "lib/plugin.module.js",
   "types": "lib/plugin.d.ts",
   "engines": {
-    "node": ">= 12.13 <13"
+    "node": ">= 12.13"
   },
   "repository": {
     "type": "git",
